@@ -28,7 +28,7 @@ function Layout({user}) {
                 <NavLink to="/about">About this game</NavLink>
 
                 {
-                  (user) ? <><NavLink to="/profile">Welcome {user}</NavLink><button>Log-Out</button></> 
+                  (user) ? <><NavLink to="/profile">Welcome {user}</NavLink><NavLink to="/rooms">Rooms</NavLink><button>Log-Out</button></> 
                   : 
                   <NavLink to="/sign-in" >Sign-in</NavLink>
                 }

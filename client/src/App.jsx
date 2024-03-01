@@ -6,6 +6,7 @@ import About from './components/About';
 import Layout from './components/Layout';
 import Profile from './components/Profile';
 import SignUp from './components/SignUp';
+import Rooms from './components/Rooms';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path='profile' element={<Profile user = { user }/>} />
         <Route path='sign-in' element={<SignUp setUser = {setUser}/>} />
+        <Route path='rooms' element={<Rooms />} />
         <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>
