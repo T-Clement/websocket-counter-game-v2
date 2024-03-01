@@ -10,7 +10,7 @@ function Rooms () {
 
 
     const addRoomToRooms = (name) => {
-        setRooms(...rooms, name)
+        setRooms([...rooms, name])
     }
 
 
